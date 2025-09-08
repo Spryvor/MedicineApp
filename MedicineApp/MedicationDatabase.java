@@ -2,7 +2,7 @@ public class MedicationDatabase {
     private Connection conn;
 
     public MedicationDatabase(String dbFile) {
-        // Initialize DB connection
+        // Initialize Database connection
     }
 
     public void createTable() {
@@ -14,6 +14,7 @@ public class MedicationDatabase {
     }
 
     public List<Medication> getAllMedications() {
-        // Return all meds from DB
+        // Return all the meds from dataabse
     }
 }
+
