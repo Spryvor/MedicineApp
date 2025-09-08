@@ -16,7 +16,7 @@ public class Medication {
         this.frequencyHours = frequencyHours;
     }
 
-    // Constructor without ID (e.g., before DB assigns it)
+    // Constructor w/o ID (before the database assigns it)
     public Medication(String name, String dosage, LocalTime time, int frequencyHours) {
         this(0, name, dosage, time, frequencyHours);
     }
@@ -26,12 +26,12 @@ public class Medication {
         this(0, name, dosage, LocalTime.of(8, 0), 24); // default time: 8:00 AM, every 24 hrs
     }
 
-    // Constructor with name only
+    // Constructor w/ name only
     public Medication(String name) {
         this(name, "1 pill");
     }
 
-    // Constructor with no arguments (default values)
+    // Constructor (default values)
     public Medication() {
         this("Unknown");
     }
@@ -52,6 +52,7 @@ public class Medication {
     public getFrequencyHours() {
         return frequencyHours;
     }
+    
     // Setters
     public void setId(int id) {
         this.id = id;
@@ -67,8 +68,7 @@ public class Medication {
     }
     public void setFrequencyHours(int frequencyHours) {
         this.frequencyHours = frequencyHours;
-    }   
-    
+    }     
 }
 
 public class PrescriptionMed extends Medication {
@@ -187,4 +187,5 @@ public class OverTheCounterMed extends Medication {
                 ", activeIngredients='" + activeIngredients + '\'' +
                 '}';
     }
+
 }
