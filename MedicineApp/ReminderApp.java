@@ -7,6 +7,9 @@ public class ReminderApp {
         ReminderScheduler scheduler = new ReminderScheduler();
         scheduler.scheduleReminders(meds);
 
-        // Open JavaFX GUI (e.g., new MedicationForm())
+        // Make JavaFX Gui like new MedicationForm()
+        // Do this later focus on main program first
+        // Priority level 3
     }
 }
+
